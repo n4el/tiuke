@@ -23,6 +23,7 @@ def output(r,cedula=''):
 		rut = str(r['rut'])
 		dv = str(r['dv'])
 		if cedula == '':
+			print 'd'
 			cedula = str(rut)+'-'+str(dv)
 	r = dict(name=name,rut=rut,dv=dv,cedula=cedula)
 	return r
@@ -69,7 +70,10 @@ def ruti_com (query,verbose=False):
 			return r
 		else :
 			r = r[0]
-			r = output(r, query)
+			if query[-3] != '-' :
+				r = output(r)
+			else: 
+				r = output(r, query)
 			return r
 
 	else :

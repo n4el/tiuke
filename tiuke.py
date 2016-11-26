@@ -1,79 +1,12 @@
 #!/usr/bin/env python
+
 # -*- coding: utf-8 -*-
-
-#########################################################
-#														#
-# nombre/name: tiuke_chile								#
-# versión/version: 0.1									#
-# autor/author: n4el									#
-# fuente/source: https://github.com/n4el/tiuke 			#
-# fecha/date: nov.2016									#
-#														#
-#########################################################
-#														#
-# resumen/resume:										#
-#  -es: aplicación  de recolección  de información		#
-#       enfocado a personas para ingenería social.		#
-#  -en: information gathering aplication of people		#
-#       target for social engenering.					#
-# 														#
-# descripción/description:								#
-#  -es: haciendo  uso del RUT  de una  persona chilena	#
-#       o identificándola  con un rutificador se hacen 	#
-#       búsquedas en  redes sociales,  google  y bases	#
-#       de datos de uso público.  El producto consiste	#
-#       en un ficha con toda la información encontrada.	#
-#														#
-# uso/usage:											#
-#  -es: se puede ejecutar la aplicación sin  necesidad 	#
-#       de ingresar una opción.	No se puede usar  "-r"	#
-#       y "-n" al mismo tiempo.							#
-#       opciones:										#
-#       -n: búsqueda por nombres y/o apellidos.			#
-#       -r: búsqueda por rut.							#
-#       -v: verbose.									#
-#       ejemplos:										#
-#        ./tiuke -n "juan pérez pérez"					#
-#        ./tiuke -r -v "12345678-9"						#
-#        												#
-#########################################################
-
-"""
-modules:
-	- estado:
-		def GobiernoTransparente
-		def Servel
-	- profesion:
-		def Pjud
-	- facebook:
-	- twitter:
-	- bing_correo:
-	- linkedin:
-	- google_exponsed_bd:
-	- google:
-	- aux:
-		def Bomberos
-tiuke:
-	- class usage:
-		- noop
-		- opb
-		- file
-		- log
-	def inic
-targed:
-	- rutificador:
-tiuke.log
-
-"""
 
 import os
 import sys
 import getopt
-import configparser
+import ConfigParser
 from modules import ruti
-
-#import modules.servel
-#import config
 try :
 	from lxml import html
 except:
@@ -194,11 +127,13 @@ def init(argv=0):
 			q = q.noop()	
 	# ya se dispone del diccionario de identificación en 'q'.	
 	print q
+	print verbose
+
 	if verbose == True :
-		print '\033[0;30m'+' [v][es]'+'\033{0m'+' se procede a consultar módulos...'+'\033[0m'
+		print '\033[0;30m'+' [v][es]'+'\033[0m'+' se procede a consultar módulos...'+'\033[0m'
 	# consulta al archivo de configuración 'config.py'.
-	print 'pre_config.Modules'
-	mod == configparser.ConfigParser()
+	print 'ACA'
+	m == ConfigParser.RawConfigParser()
 	print '202'
 	mod.read('tiuke.cfg')
 	mod == mod['modulos']
@@ -226,26 +161,3 @@ if __name__ == "__main__":
 		print '\033[0;30m'+' [es]'+'\033{0;31m'+' aplicación interrupida por el usuario.'+'\033[0m'
 	except:
 		sys.exit()
-
-		"""
-
-
-def __main__ 	
-
-		else :
-
-
-			iden = iden.ConOpc()
-		r = Motores(iden)
-		servel = r.Servel()
-		bombero = r.Bombero()
-		abogado = r.Abogados()
-		trans = r.GobiernoTransparente()
-		print 'd_main'
-		print trans
-		Salida(iden, servel, bombero, abogado)
-	if 
-
-	# función cuando lleva opciones. 		
-	def ConOpc(self): 		
-"""
