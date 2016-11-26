@@ -1,0 +1,37 @@
+#########################################################
+#                                                       #
+# nombre/name: tiuke_chile                              #
+# versión/version: 0.1                                  #
+# autor/author: n4el									#
+# fuente/source: https://github.com/n4el/tiuke 			#
+# fecha/date: nov.2016									#
+#														#
+#########################################################
+#														#
+# resumen/resume:										#
+#  -es: aplicación  de recolección  de información		#
+#       enfocado a personas para ingenería social.		#
+#  -en: information gathering aplication of people		#
+#       target for social engenering.					#
+# 														#
+# descripción/description:								#
+#  -es: haciendo  uso del RUT  de una  persona chilena	#
+#       o identificándola  con un rutificador se hacen 	#
+#       búsquedas en  redes sociales,  google  y bases	#
+#       de datos de uso público.  El producto consiste	#
+#       en un ficha con toda la información encontrada.	#
+#														#
+# uso/usage:											#
+#  -es: se puede ejecutar la aplicación sin  necesidad 	#
+#       de ingresar una opción.	No se puede usar  "-r"	#
+#       y "-n" al mismo tiempo.							#
+#       opciones:										#
+#       -n: búsqueda por nombres y/o apellidos.			#
+#       -r: búsqueda por rut.							#
+#       -v: verbose.									#
+#       ejemplos:										#
+#        ./tiuke -n "juan pérez pérez"					#
+#        ./tiuke -r -v "12345678-9"						#
+#        												#
+#########################################################
+
